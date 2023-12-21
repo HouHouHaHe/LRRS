@@ -358,7 +358,7 @@ int main()
     CRYPTO_Initialize(); 
     PP com_pp = Setup(128);
     int m=4;
-	int n = sqrt(m);
+	int n = log(m)/log(2);;
     int index = 2;
     vector<BigInt> usk(m);   //user's sk
     vector<ECPoint> upk(m);  //user's pk
